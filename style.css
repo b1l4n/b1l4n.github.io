@@ -1,0 +1,71 @@
+/* Body */
+body {
+    background-color: #fdfdfd;  /* Off-white background for a soft look */
+    color: #333333;             /* Dark gray text for readability */
+    font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat font */
+    margin: 0;                  /* Remove default margin */
+    display: grid;              /* Use CSS Grid layout */
+    grid-template-rows: auto 1fr auto; /* Define rows for header, content, and footer */
+    grid-template-columns: 1fr; /* Single column layout */
+    height: 100vh;              /* Full viewport height */
+}
+
+/* Header */
+header {
+    background-color: #FFCC00;  /* Yellow from the Catalan flag */
+    color: #0033A0;             /* Blue text for good contrast */
+    padding: 20px;
+    display: flex;              /* Use Flexbox for header layout */
+    justify-content: space-between; /* Space out header items */
+    align-items: center;        /* Vertically center items */
+    border-bottom: 3px solid #FF0000;  /* Red border for a stylish look */
+    grid-row: 1;                /* Place header in the first row */
+}
+
+/* Header Title */
+header h1 {
+    margin: 0;                  /* Remove default margin */
+    font-family: 'Montserrat', Arial, sans-serif; /* Header title with Montserrat */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;              /* Use Flexbox to align navigation links horizontally */
+    gap: 10px;                  /* Space between buttons */
+}
+
+/* Navigation Buttons */
+nav a {
+    background-color: #FFFFFF;  /* White background for buttons */
+    color: #0033A0;             /* Blue text */
+    padding: 8px 16px;          /* Adjust padding to make the button size more appropriate */
+    border: 2px solid #0033A0;  /* Blue border around buttons */
+    border-radius: 5px;         /* Rounded corners */
+    text-decoration: none;      /* Remove underline */
+    font-size: 16px;
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+    display: inline-block;      /* Ensure buttons are inline-block elements */
+    font-family: 'Montserrat', Arial, sans-serif; /* Navigation buttons with Montserrat */
+}
+
+nav a:hover {
+    background-color: #FFCC00;  /* Yellow background on hover */
+    color: #0033A0;             /* Blue text on hover */
+    border: 2px solid #FFCC00;  /* Match border color with hover background */
+}
+
+/* Main Content Area */
+main {
+    grid-row: 2;                /* Place main content in the second row */
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #FFCC00;  /* Yellow background to match the header */
+    color: #0033A0;             /* Blue text for readability */
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #FF0000;  /* Red border for a stylish look */
+    grid-row: 3;                /* Place footer in the third row */
+}
